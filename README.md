@@ -1,21 +1,23 @@
 # Zadarski Studentski Festival 2026
 
-Jednostavna web stranica za izmišljeni glazbeni događaj organiziran za studente Sveučilišta u Zadru.
+Web stranica za studentski glazbeni festival u Zadru. Prikazuje program, izvođače i omogućuje prijavu za akreditaciju. Stranica je namijenjena studentima Sveučilišta u Zadru.
 
-## Živa stranica (Netlify)
+## Live demo
 
-**URL:** https://zadarski-studentski-festival.netlify.app
+https://zadarski-studentski-festival.netlify.app
 
-## Struktura projekta
+## Stranice
 
-- `index.html` - Naslovnica s datumom i lokacijom
-- `program.html` - Raspored programa i nastupa
-- `izvodjaci.html` - Kartice izvođača
-- `prijava.html` - Forma za prijavu studenata ili akreditaciju
-- `css/style.css` - Stilovi stranice
-- `js/main.js` - Osnovna JavaScript logika za formu
-- `img/` - Mjesto za slike izvođača ili vizuale
+- `index.html` – Naslovnica s datumom, lokacijom i kratkim opisom festivala
+- `program.html` – Raspored nastupa i aktivnosti tijekom festivalskog dana
+- `izvodjaci.html` – Kartice izvođača s filterom po glazbenom žanru
+- `prijava.html` – Forma za prijavu studenata i akreditaciju
 
-## Kako koristiti
+## Tehnologije
 
-Otvorite `index.html` u pregledniku ili pokrenite lokalni razvojni server ako želite podršku za putanje i dinamički pregled.
+HTML5, CSS3 (Flexbox, CSS varijable), JavaScript (vanilla)  
+Google Analytics 4, Netlify hosting
+
+## Autor
+
+Lucija Bašić, UNIZD – Kultura i turizam / DK, 2025./2026.
