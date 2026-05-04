@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava | Zadarski Studentski Festival</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header small-header">
+        <div class="container">
+            <h1>Prijava za studente</h1>
+            <p class="lead">Ispunite obrazac za akreditaciju i primite potvrdu elektronskom poštom.</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html">Naslovnica</a>
+            <a href="program.html">Program</a>
+            <a href="izvodjaci.html">Izvođači</a>
+            <a href="prijava.html">Prijava</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="form-section">
+            <form id="registration-form" class="registration-form">
+                <label for="ime">Ime i prezime</label>
+                <input type="text" id="ime" name="ime" placeholder="Unesite ime i prezime" required>
+
+                <label for="email">Elektronska pošta</label>
+                <input type="email" id="email" name="email" placeholder="naziv@domena.com" required>
+
+                <label for="fakultet">Fakultet / odjel</label>
+                <input type="text" id="fakultet" name="fakultet" placeholder="Sveučilište u Zadru" required>
+
+                <label for="vrsta">Vrsta prijave</label>
+                <select id="vrsta" name="vrsta" required>
+                    <option value="">Odaberite...</option>
+                    <option value="student">Student</option>
+                    <option value="akreditacija">Akreditacija</option>
+                    <option value="volonter">Volonter</option>
+                </select>
+
+                <label for="poruka">Poruka ili preferencije</label>
+                <textarea id="poruka" name="poruka" rows="4" placeholder="Napišite kratku poruku..." aria-label="poruka"></textarea>
+
+                <button type="submit">Pošalji prijavu</button>
+                <p id="form-message" class="form-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Zadarski Studentski Festival</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
