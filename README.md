@@ -1,6 +1,10 @@
-# Zadarski Studentski Festival
+# Zadarski Studentski Festival 2026
 
 Jednostavna web stranica za izmišljeni glazbeni događaj organiziran za studente Sveučilišta u Zadru.
+
+## Živa stranica (Netlify)
+
+**URL:** https://zadarski-studentski-festival.netlify.app
 
 ## Struktura projekta
 

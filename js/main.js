@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Aktivna navigacijska stavka
+    var currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".main-nav a").forEach(function (link) {
+        var href = link.getAttribute("href");
+        if (href === currentPage) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+
     // Filter izvođača
     var filterBtns = document.querySelectorAll(".filter-btn");
     var artistCards = document.querySelectorAll(".artist-card");
