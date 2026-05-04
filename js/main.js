@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Filter izvođača
+    var filterBtns = document.querySelectorAll(".filter-btn");
+    var artistCards = document.querySelectorAll(".artist-card");
+
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            var filter = btn.getAttribute("data-filter");
+
+            filterBtns.forEach(function (b) { b.classList.remove("active"); });
+            btn.classList.add("active");
+
+            artistCards.forEach(function (card) {
+                if (filter === "svi" || card.getAttribute("data-genre") === filter) {
+                    card.classList.remove("hidden");
+                } else {
+                    card.classList.add("hidden");
+                }
+            });
+        });
+    });
+
+    // Forma za prijavu
     var form = document.getElementById("registration-form");
     if (!form) return;
 

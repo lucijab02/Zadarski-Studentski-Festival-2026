@@ -24,23 +24,30 @@
     </nav>
 
     <main class="container">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="svi">Svi</button>
+            <button class="filter-btn" data-filter="indie">Indie</button>
+            <button class="filter-btn" data-filter="elektronicki">Elektronički</button>
+            <button class="filter-btn" data-filter="akusticni">Akustični</button>
+            <button class="filter-btn" data-filter="dj">DJ</button>
+        </div>
         <section class="artist-grid">
-            <article class="artist-card">
+            <article class="artist-card" data-genre="indie">
                 <div class="artist-photo placeholder"></div>
                 <h3>Zvukovi Jutra</h3>
                 <p>Studentski indie bend koji donosi harmonične gitare, snažan vokal i energičan nastup.</p>
             </article>
-            <article class="artist-card">
+            <article class="artist-card" data-genre="elektronicki">
                 <div class="artist-photo placeholder"></div>
                 <h3>Neon Puls</h3>
                 <p>Elektronički duo poznat po vizualnim nastupima i plesnim setovima koji drže publiku u pokretu.</p>
             </article>
-            <article class="artist-card">
+            <article class="artist-card" data-genre="akusticni">
                 <div class="artist-photo placeholder"></div>
                 <h3>Akustični Krug</h3>
                 <p>Studenti glazbene akademije s emotivnim izvedbama na gitari, violini i klaviru.</p>
             </article>
-            <article class="artist-card">
+            <article class="artist-card" data-genre="dj">
                 <div class="artist-photo placeholder"></div>
                 <h3>DJ Aura</h3>
                 <p>DJ nastup usmjeren na house ritmove, lounge atmosferu i trenutke za ples pod zvijezdama.</p>
