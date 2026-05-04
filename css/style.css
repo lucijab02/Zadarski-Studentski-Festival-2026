@@ -176,14 +176,8 @@ body {
     aspect-ratio: 16 / 9;
     border-radius: 1rem;
     background-color: #17233a;
-    display: grid;
-    place-items: center;
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-
-.artist-photo.placeholder::before {
-    content: "Slika izvođača";
+    display: block;
+    object-fit: cover;
 }
 
 .registration-form {
